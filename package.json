@@ -4,7 +4,7 @@
   "description": "NodeJS Test App",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha test/**/*.js",
     "start": "node app.js"
   },
   "author": "",
@@ -12,5 +12,10 @@
   "dependencies": {
     "express": "^4.16.3",
     "multer": "^1.3.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.2.0",
+    "mocha": "^5.2.0"
   }
 }
